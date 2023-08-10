@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
- *
  * main - to print the size of dara types
  *
  * Return: always (0)
