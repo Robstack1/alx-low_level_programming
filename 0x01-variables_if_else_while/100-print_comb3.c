@@ -7,22 +7,24 @@
  */
 int main(void)
 {
-	int n;
+	int n, m;
 
-	for (m = 48; m <= 57; m++)
+	for (n = 48; n <= 56; n++)
 	{
-		if (m > n)
+		for (m = 48; m <= 57; m++)
 		{
-			putchar(n);
-			putchar(m);
-			if (n != 56 || m != 57)
+			if (m > n)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
 	putchar('\n');
 	return (0);
 }
-
