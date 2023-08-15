@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _is alpha int - return 1 when c is cap or low
+ * _isalpha - return 1 when c is cap or low
  *
  * Description: we are using _putchar
  *
