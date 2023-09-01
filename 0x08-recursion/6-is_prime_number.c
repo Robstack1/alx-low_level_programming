@@ -1,30 +1,28 @@
 #include "main.h"
 /**
- * sqrt_a - return the natural square root of
- * a number
- * @a: input number
- * @b: iterator
- * Return: square root or -1
+ * prime_a - Calculate if its a prime
+ * @a: input
+ * @b: divisor
+ * Return: (0)
  */
-int sqrt_a(int a, int b)
+int prime_a(int a, int b)
 {
-	if (b * b == a)
+	if (a <= 1 || (a != b && a % b == 0))
 	{
-		return (b);
+		return (0);
 	}
-	else if (b * b > a)
+	else if (a == b)
 	{
-		return (-1);
+		return (1);
 	}
-	return (sqrt_a(a, b + 1));
+	return (prime_a(a, b + 1));
 }
 /**
- * _sqrt_recursion - returns the natural square root of
- * a number
+ * is_prime_number - detect if its a prime no
  * @n: the input number
- * Return: natural square root
+ * Return: 0 or 1
  */
-int _sqrt_recursion(int n)
+int is_prime_number(int n)
 {
-	return (sqrt_a(n, 0));
+	return (prime_a(n, 2));
 }
