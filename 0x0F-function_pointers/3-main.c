@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 	/* if operator not in operator list */
 	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
-		printf("Erro\n");
+		printf("Error\n");
 		exit(99);
 	}
 
